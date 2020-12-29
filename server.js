@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 app.use(morgan("dev"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://admin-angela:password1234@cluster0.rvcrf.mongodb.net/workout", {
     useNewUrlParser:true, 
     useFindAndModify:false,
     useUnifiedTopology:true 
